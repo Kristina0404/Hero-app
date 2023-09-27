@@ -3,6 +3,10 @@ package org.ait.hero.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public abstract class BasePage {
 
@@ -23,6 +27,13 @@ public abstract class BasePage {
             element.clear();
             element.sendKeys(text);
         }
+    }
+    public boolean shouldHaveText(WebElement element, String text, int time) {
+        return new WebDriverWait(driver, Duration.ofSeconds(time))
+                .until(ExpectedConditions.textToBePresentInElement(element,text));
+    }
+    public boolean isTextPresent(WebElement element,String book) {
+        return element.getText().contains(book);
     }
 
 }
