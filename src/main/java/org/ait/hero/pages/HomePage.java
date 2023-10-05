@@ -38,4 +38,16 @@ WebElement brokenImages;
         return new ImagesPage(driver);
 
     }
+@FindBy(xpath = "//a[.='Frames']")
+WebElement frames;
+    public FramesPage getFrames() {
+        click(frames);
+        return new FramesPage(driver);
+    }
+@FindBy(css = "[href='/horizontal_slider']")
+WebElement slider;
+    public SliderPage getHorizontalSlider() {
+        click(slider);
+        return new SliderPage(driver);
+    }
 }
