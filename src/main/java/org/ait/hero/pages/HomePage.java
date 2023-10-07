@@ -50,4 +50,23 @@ WebElement slider;
         click(slider);
         return new SliderPage(driver);
     }
+@FindBy(css = "[href='/checkboxes']")
+WebElement checkboxes;
+    public CheckboxesPage getCheckboxes() {
+        click(checkboxes);
+        return new CheckboxesPage(driver);
+
+    }
+@FindBy(css = "[href='/upload']")
+WebElement upload;
+    public FileUploadPage getFileUpload() {
+        click(upload);
+        return new FileUploadPage(driver);
+    }
+@FindBy(css = "[href='/dropdown']")
+WebElement dropdown;
+    public DropDownPage getDropdown() {
+        click(dropdown);
+        return new DropDownPage(driver);
+    }
 }

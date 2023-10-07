@@ -38,6 +38,16 @@ public abstract class BasePage {
     public boolean isTextPresent(WebElement element, String book) {
         return element.getText().contains(book);
     }
+    public void pause(int millis){
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
 }
+
 
 
