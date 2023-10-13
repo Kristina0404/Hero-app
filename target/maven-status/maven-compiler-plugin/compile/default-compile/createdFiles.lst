@@ -1,0 +1,15 @@
+org\ait\hero\pages\BasePage.class
+org\ait\hero\pages\CheckboxesPage.class
+utils\MyListener.class
+org\ait\hero\pages\JSExecutor.class
+org\ait\hero\pages\AlertsPage.class
+org\ait\hero\pages\DropDownPage.class
+org\ait\hero\pages\data\UserData.class
+org\ait\hero\pages\FramesPage.class
+org\ait\hero\pages\IFramePage.class
+org\ait\hero\pages\HomePage.class
+org\ait\hero\pages\WindowPage.class
+org\ait\hero\pages\ImagesPage.class
+org\ait\hero\pages\SliderPage.class
+org\ait\hero\pages\FileUploadPage.class
+org\ait\hero\pages\NestedFramesPage.class
