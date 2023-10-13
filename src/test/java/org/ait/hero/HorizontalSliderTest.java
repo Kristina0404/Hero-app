@@ -1,6 +1,5 @@
 package org.ait.hero;
 
-import org.ait.hero.TestBase;
 import org.ait.hero.pages.HomePage;
 import org.ait.hero.pages.SliderPage;
 import org.testng.annotations.BeforeMethod;

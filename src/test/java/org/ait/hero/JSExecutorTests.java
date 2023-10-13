@@ -1,8 +1,8 @@
 package org.ait.hero;
 
+import org.ait.hero.data.UserData;
 import org.ait.hero.pages.HomePage;
 import org.ait.hero.pages.JSExecutor;
-import org.ait.hero.pages.data.UserData;
 import org.testng.annotations.Test;
 
 public class JSExecutorTests extends TestBase{
